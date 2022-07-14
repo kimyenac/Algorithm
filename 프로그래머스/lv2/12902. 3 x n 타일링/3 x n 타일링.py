@@ -1,6 +1,6 @@
 def solution(n):
     res = [0, 3, 11]
-    idx = int(n/2)
+    idx = n/2
     
     if n % 2 != 0: return 0
 
