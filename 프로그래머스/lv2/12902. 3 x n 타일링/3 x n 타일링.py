@@ -3,7 +3,6 @@ def solution(n):
     idx = int(n/2)
     
     if n % 2 != 0: return 0
-    if idx < 3: return res[idx]
 
     for i in range(3, idx+1):
         res.append((3*res[i-1]+sum(res[1:i-1])*2+2)%1000000007)
