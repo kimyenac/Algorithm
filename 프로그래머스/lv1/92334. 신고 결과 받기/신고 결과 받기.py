@@ -4,8 +4,6 @@ def solution(id_list, report, k):
 
     for r in set(report):
         reports[r.split()[1]] += 1
-        
-    print(reports)
 
     for r in set(report):
         if reports[r.split()[1]] >= k:
