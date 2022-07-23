@@ -1,19 +1,18 @@
-function solution(s){
-
-    let stack = [];
-    for (let i = 0; i < s.length; i += 1) {
-        if (s[i] == "(") {
-            stack.push(s[i]);
+function solution(s) {
+    let stack = []
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] == '(') {
+            stack.push(s[i])
         } else {
-            if (stack.length == 0) {
+            if (stack.length > 0) {
+                stack.pop()
+            } else {
                 return false
             }
-            stack.pop()
         }
     }
     if (stack.length > 0) {
-        return false;
-    } else {
-        return true;
+        return false
     }
+    return true
 }
