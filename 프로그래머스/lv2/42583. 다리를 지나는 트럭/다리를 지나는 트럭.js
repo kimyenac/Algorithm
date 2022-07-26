@@ -1,6 +1,8 @@
 function solution(bridge_length, weight, truck_weights) {
     let time = 0
     let bridge = Array.from({length: bridge_length}, () => 0);
+    
+    console.log(bridge)
 
     while (bridge.length) {
         time += 1
