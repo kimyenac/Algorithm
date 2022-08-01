@@ -15,7 +15,7 @@ function permutations(arr, n) {
 function solution(K, dungeons) {
     let answer = -1;
     let tmp = permutations(dungeons, dungeons.length);
-    
+
     for (let i = 0; i < tmp.length; i++) {
         let k = K;
         let ans = 0;
@@ -33,4 +33,4 @@ function solution(K, dungeons) {
     }
 
     return answer
-}
+} 
