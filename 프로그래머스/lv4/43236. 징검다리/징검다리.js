@@ -1,5 +1,5 @@
 function solution(distance, rocks, n) {
-    var answer = 0;
+    let answer = 0;
     let left = 1;
     rocks.push(distance);
     rocks.sort((a, b) => a - b);
